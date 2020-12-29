@@ -51,3 +51,8 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/tissot/BoardConfigVendor.mk
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio 
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display 
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
