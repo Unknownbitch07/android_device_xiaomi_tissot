@@ -38,6 +38,13 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
 
+# Inherit ShapeShiftOS Official build stuff.
+SSOS_BUILD_TYPE :=OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED :=true
+
+PRODUCT_PRODUCT_PROPERTIES += \
+     ro.ssos.cpu=msm8953
+
 # Build fingerprint
 BUILD_FINGERPRINT := xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys
 BUILD_DESC := tissot-user 8.0.0 OPR1.170623.026 8.1.10 release-keys
