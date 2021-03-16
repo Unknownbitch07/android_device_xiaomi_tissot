@@ -16,7 +16,7 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/ssos_tissot.mk
 
-COMMON_LUNCH_CHOICES := \ 
-    ssos_tissot-user \ 
+COMMON_LUNCH_CHOICES := \
+    ssos_tissot-user \
     ssos_tissot-userdebug \
     ssos_tissot-eng
