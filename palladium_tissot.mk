@@ -24,8 +24,12 @@ $(call inherit-product, device/xiaomi/tissot/device.mk)
 # Inherit some common PalladiumOS stuff.
 $(call inherit-product, vendor/palladium/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_BLUR := true
+
+# Gapps
+PALLADIUM_BUILD_VARIANT := GAPPS
 TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 #PALLADIUM-PROPS
 PRODUCT_PRODUCT_PROPERTIES += \
